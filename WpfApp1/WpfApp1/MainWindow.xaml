@@ -1,0 +1,19 @@
+﻿<Window KeyDown="grid_KeyDown" x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Охота за сокровищами" Height="450" Width="800">
+    <Grid x:Name="grid" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="81*"/>
+            <ColumnDefinition Width="719*"/>
+        </Grid.ColumnDefinitions>
+        <UniformGrid  x:Name="grid1" Rows="10" Columns="10" Margin="29,0,-1,0" Grid.Column="1"/>
+        <Label  Content="Lol" x:Name="Nickname" Grid.ColumnSpan="2"></Label>
+        <Label Content="HP:100" x:Name="HP" Margin="0,19,0,-19" Grid.ColumnSpan="2"></Label>
+    </Grid>
+
+</Window>
